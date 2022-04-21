@@ -1,0 +1,128 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	background: var(--bgSite)
+}
+header{
+	width: 100%;
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+}
+header #promoçao{
+	width: 100%;
+	height: 50px;
+	background: black;
+	text-align: center;
+}
+header #promoçao p{
+	color: white;
+	font-size: 1.3rem;
+	margin-top: 15px;
+}
+header #logo{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header #dasd {
+	width: 100%;
+	max-width: 1263px;
+    min-height: 550px;
+	
+
+}
+header #dasd .img{
+	width: 100%;
+	height: 100%;
+	background:url(img/wallpaper.jpeg) fixed  no-repeat;
+	background-attachment: fixed;
+	filter: brightness(0.4);
+    
+}
+header #text {
+	position: relative;
+	top: -235px;
+	color: white;
+	left: 23px;
+}
+header #text h2{
+	font-size: 2.3rem;
+}
+header #text p{
+	font-size: 1.5rem;
+	margin-top: 10px;
+}
+main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+main h3{
+	font-size: 2.5rem;
+}
+main #cards{
+	display: flex;
+ 	align-items: center;
+	justify-content: center;
+ 	flex-wrap: wrap;
+ 	padding: 12px;
+}
+main #cards article{
+	width: 25%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: var(--bgCard);
+	cursor: pointer;
+	margin: 10px;
+}
+main #cards article img{
+	width: 100%;
+	max-width: 400px;
+}
+main #cards article div{
+	opacity: 0;
+	position: relative;
+	top: -145px;
+	color: white
+	
+}
+main #cards article div p{
+	font-size: 2.5rem
+}
+main #cards article div span{
+	font-size: 1.7rem;
+}
+main #cards article div a{
+	text-decoration: none;
+	color: white;
+
+}
+main #cards article:hover div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 1;
+	transition: all .5s ease-in-out
+}
+main #cards article:hover img{
+	filter: brightness(70%);
+	transition: all .5s ease-in-out;
+}
